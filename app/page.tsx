@@ -7,8 +7,8 @@ import WebsitePreview from './components/WebsitePreview';
 
 const menuItems = [
   { id: "about", label: "About" },
+  { id: "projects", label: "Projects" },
   { id: "experience", label: "Experience" },
-  { id: "projects", label: "Work" },
   { id: "blog", label: "Blog" },
 ];
 
@@ -18,8 +18,8 @@ export default function Home() {
 
   // Section refs
   const aboutRef = useRef(null);
-  const experienceRef = useRef(null);
   const projectsRef = useRef(null);
+  const experienceRef = useRef(null);
   const blogRef = useRef(null);
 
   useEffect(() => {
@@ -33,8 +33,8 @@ export default function Home() {
   useEffect(() => {
     const sectionRefs = [
       { id: "about", ref: aboutRef },
-      { id: "experience", ref: experienceRef },
       { id: "projects", ref: projectsRef },
+      { id: "experience", ref: experienceRef },
       { id: "blog", ref: blogRef },
     ];
     const observer = new window.IntersectionObserver(
@@ -85,8 +85,8 @@ export default function Home() {
       <header className="lg:hidden block w-full bg-[#0F172A]">
         <div className="px-6 py-12">
           <h1 className="text-4xl font-bold text-white mb-2">Lux Yoga</h1>
-          <p className="text-lg sm:text-xl text-white mb-4 whitespace-nowrap">Project Manager & Software Engineer</p>
-          <p className="text-m text-[#94A3B8] mb-6">I help plan and build accessible, performant, digital experiences for web and mobile.</p>
+          <p className="text-lg sm:text-xl text-white mb-4 whitespace-nowrap">Data Analytics Engineering</p>
+          <p className="text-m text-[#94A3B8] mb-6">I transform complex data into actionable insights that drive business decisions and strategic growth.</p>
           <div className="flex gap-4 text-2xl text-[#94A3B8]">
             <a href="https://www.linkedin.com/in/luxyoga/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
             <a href="https://www.instagram.com/lux.productdesign/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
@@ -102,8 +102,8 @@ export default function Home() {
         <aside className="hidden lg:flex flex-col fixed left-0 top-0 h-full w-[40vw] max-w-[700px] px-32 z-10 backdrop-blur-md bg-transparent">
           <div className="flex flex-col h-full ml-4" style={{ paddingTop: '6rem' }}>
             <h1 className="text-5xl font-bold mb-2">Lux Yoga</h1>
-            <h2 className="text-xl font-medium text-white mb-8 whitespace-nowrap">Project Manager & Software Engineer</h2>
-            <p className="mb-14 text-m text-[#94A3B8]">I help plan and build accessible, performant, digital experiences for web and mobile.</p>
+            <h2 className="text-xl font-medium text-white mb-8 whitespace-nowrap">Data Analytics Engineering</h2>
+            <p className="mb-14 text-m text-[#94A3B8]">I transform complex data into actionable insights that drive business decisions and strategic growth.</p>
             <nav className="flex flex-col gap-8 mt-8">
               {menuItems.map((item) => (
                 <button
@@ -145,17 +145,14 @@ export default function Home() {
 
         {/* Main Content */}
         <main className="flex-1 z-10 relative pt-0 lg:pt-0 lg:ml-[50vw]" style={{ paddingLeft: '2rem', paddingRight: '2rem', paddingBottom: '2rem' }}>
-          <div className="lg:pl-8 lg:pr-24 pt-4 lg:pt-24">
+          <div className="lg:pl-8 lg:pr-8 pt-4 lg:pt-24">
             <section id="about" ref={aboutRef} className="mb-16">
               <h2 className="lg:hidden sticky top-0 z-30 py-2 text-sm font-bold text-white mb-2 tracking-widest">ABOUT</h2>
               <p className="text-m text-[#94A3B8] mb-4">
-              I'm a multidisciplinary designer, developer, and certified project manager with 7+ years of experience creating accessible digital experiences across diverse industries. Originally from an Economics and Accounting background, I bring strong business acumen and strategic thinking to every project. I excel at managing complex projects from conception to launch, translating user research into performant solutions - consistently delivering projects on time and within scope.
+              I'm a data & analytics professional with a foundation in Economics and Accounting, bringing 7+ years of experience in project management and strategic thinking to the data field. I specialize in ETL processes, data cleaning, and data visualization using Python, SQL, and Tableau/Power BI. I excel at translating complex datasets into clear insights that drive strategic decisions.
               </p>
               <p className="text-m text-[#94A3B8] mb-4">
-                I blend technical expertise with user-centered design principles to deliver meaningful digital products that meet both user needs and business objectives.
-              </p>
-              <p className="text-m text-[#94A3B8] mb-4">
-              Looking ahead, I'm passionate about creating experiences that are focused on reducing friction and solve real problems for users.
+                I combine analytical rigor with business acumen to deliver data-driven solutions that solve real business problems. My approach includes data mining, exploratory data analysis (EDA), and creating interactive dashboards using tools like Power BI, Tableau and Streamlit. I'm proficient in A/B testing, and database management systems including PostgreSQL and MySQL. My project management background enables me to lead data initiatives from requirements gathering through deployment and monitoring.
               </p>
               <p className="text-m text-[#94A3B8] mb-4">
                 In my spare time - I'm usually painting miniatures, playing TCGs, or reading.
@@ -168,6 +165,144 @@ export default function Home() {
                 Tak for besøget!
               </p>
             </section>
+          
+          {/* Projects Section */}
+          <section id="projects" ref={projectsRef} className="mb-16">
+            <h2 className="sticky top-0 z-30 py-2 text-sm font-bold text-white mb-2 tracking-widest">PROJECTS</h2>
+            <div className="space-y-0">
+              <div className="-mb-4">
+              
+              {/* Project Entry 1 - Copenhagen Biking Analysis */}
+              <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
+                <div className="flex flex-col lg:flex-row gap-4 lg:gap-8">
+                  {/* Preview Window */}
+                  <div className="w-full lg:w-64 flex-shrink-0 lg:-ml-6">
+                    <a href="https://copenhagen-bike-pipeline.streamlit.app/" target="_blank" rel="noopener noreferrer">
+                      <WebsitePreview 
+                        imagePath="/copenhagen-biking-analysis.png" 
+                        fallbackGradient="from-[#10B981] to-[#3B82F6]"
+                        alt="Copenhagen Biking Analysis Dashboard preview"
+                      />
+                    </a>
+                  </div>
+                  
+                  {/* Project Details */}
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-3">
+                      <a href="https://copenhagen-bike-pipeline.streamlit.app/" target="_blank" rel="noopener noreferrer" className="group-hover:text-[#5DE7D4] transition-colors duration-300">
+                        <h3 className="text-l font-semibold">
+                          Copenhagen Biking Analysis
+                        </h3>
+                      </a>
+                      <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </div>
+                    <p className="text-[#94A3B8] text-sm mb-4">
+                    An end-to-end data engineering pipeline analyzing cycling traffic in Copenhagen and its relationship with weather conditions. Built with Apache Airflow for orchestration, PySpark for distributed ETL processing, and Streamlit for interactive dashboards. Processes 10 years of real Copenhagen cycling data (2005-2014) from Kaggle and weather data from Open-Meteo API to reveal seasonal patterns and weather correlations.
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Apache Airflow</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">PySpark</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Pandas</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">PostgreSQL</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Streamlit</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Docker</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">ETL Pipelines</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Visualization</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <a 
+                        href="https://github.com/luxyoga/copenhagen-bike-pipeline" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-sm text-[#94A3B8] hover:text-[#5DE7D4] transition-colors duration-300 flex items-center gap-2 font-medium"
+                      >
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        View GitHub Repository
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Project Entry 2 - VGC Pokémon Usage Stats Dashboard */}
+              <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
+                <div className="flex flex-col lg:flex-row gap-4 lg:gap-8">
+                  {/* Preview Window */}
+                  <div className="w-full lg:w-64 flex-shrink-0 lg:-ml-6">
+                    <a href="https://vgcpokemonstats.streamlit.app/" target="_blank" rel="noopener noreferrer">
+                      <WebsitePreview 
+                        imagePath="/dashboardscreenshot1.png" 
+                        fallbackGradient="from-[#5DE7D4] to-[#8B5CF6]"
+                        alt="VGC Pokémon Usage Stats Dashboard preview"
+                      />
+                    </a>
+                  </div>
+                  
+                  {/* Project Details */}
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-3">
+                      <a href="https://vgcpokemonstats.streamlit.app/" target="_blank" rel="noopener noreferrer" className="group-hover:text-[#5DE7D4] transition-colors duration-300">
+                        <h3 className="text-l font-semibold">
+                          VGC Pokémon Usage Stats Dashboard
+                        </h3>
+                      </a>
+                      <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </div>
+                    <p className="text-[#94A3B8] text-sm mb-4">
+                    An automated data engineering project that ingests competitive Pokémon VGC usage data from Smogon/Showdown, processes it into a queryable DuckDB database, and serves an interactive dashboard with Streamlit. Features ETL pipelines, automated monthly ingestion via GitHub Actions, and comprehensive analytics of metagame trends.
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Python</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Pandas</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">ETL Pipelines</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">DuckDB</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">SQL</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Streamlit</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">GitHub Actions</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Visualization</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <a 
+                        href="https://github.com/luxyoga/vgcpokemonstats" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-sm text-[#94A3B8] hover:text-[#5DE7D4] transition-colors duration-300 flex items-center gap-2 font-medium"
+                      >
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        View GitHub Repository
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          </section>
+
+          {/* Resume Link */}
+          <section className="mb-16">
+            <a 
+              href="/resume.html" 
+          target="_blank"
+          rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-m font-semibold text-[#94A3B8] hover:text-[#5DE7D4] transition-colors duration-300"
+            >
+              View Full Resume
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+            </a>
+          </section>
+
           <section id="experience" ref={experienceRef} className="mb-16">
             <h2 className="lg:hidden sticky top-0 z-30 py-2 text-sm font-bold text-white mb-2 tracking-widest">EXPERIENCE</h2>
             <div className="space-y-0">
@@ -323,181 +458,6 @@ export default function Home() {
           </div>
           </section>
 
-          {/* Resume Link */}
-          <section className="mb-16">
-            <a 
-              href="/resume.html" 
-          target="_blank"
-          rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-m font-semibold text-[#94A3B8] hover:text-[#5DE7D4] transition-colors duration-300"
-            >
-              View Full Resume
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-            </a>
-          </section>
-
-          {/* Projects Section */}
-          <section id="projects" ref={projectsRef} className="mb-16">
-            <h2 className="lg:hidden sticky top-0 z-30 py-2 text-sm font-bold text-white mb-2 tracking-widest">WORK</h2>
-            <div className="space-y-0">
-              <div className="-mb-4">
-              
-              {/* Project Entry 1 */}
-              <a href="https://onegreatlottery.ca/" target="_blank" rel="noopener noreferrer" className="block">
-                <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
-                  <div className="flex flex-col lg:flex-row gap-4 lg:gap-8">
-                    {/* Preview Window */}
-                    <div className="w-full lg:w-48 flex-shrink-0">
-                      <WebsitePreview 
-                        imagePath="/oglhome.png" 
-                        fallbackGradient="from-[#5DE7D4] to-[#8B5CF6]"
-                        alt="One Great Lottery website preview"
-                      />
-                    </div>
-                    
-                    {/* Project Details */}
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-3">
-                        <h3 className="text-l font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300">
-                          One Great Lottery
-                        </h3>
-                        <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                      </div>
-                      <p className="text-[#94A3B8] text-sm mb-4">
-                      Designed and developed a comprehensive digital lottery platform for charities across Canada, creating an engaging user experience that combines charitable giving with interactive gaming. The platform features real-time jackpot tracking, countdown timers, and a responsive design that encourages participation while maintaining transparency in fundraising goals.
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Wordpress</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Shopify</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Next.js</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">HTML & Tailwind CSS</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-
-              {/* Project Entry 2 */}
-              <a href="https://tenniscanadasweeps.ca/" target="_blank" rel="noopener noreferrer" className="block">
-                <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
-                  <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
-                    {/* Preview Window */}
-                    <div className="w-full lg:w-48 flex-shrink-0">
-                      <WebsitePreview 
-                        imagePath="/tennis1.jpg" 
-                        fallbackGradient="from-[#3B82F6] to-[#8B5CF6]"
-                        alt="Tennis Canada Sweepstakes website preview"
-                      />
-                    </div>
-                    
-                    {/* Project Details */}
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-3">
-                        <h3 className="text-l font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300">
-                          Tennis Canada Sweepstakes
-                        </h3>
-                        <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                      </div>
-                      <p className="text-[#94A3B8] text-sm mb-4">
-                        Designed and developed a fully responsive sweepstakes platform for Tennis Canada to drive nationwide fan engagement and email list growth. The site features a branded, mobile-optimized interface and a custom-built ticketing system that automatically generates unique entries and sends confirmation emails. Integrated countdown functionality and a clear entry flow enhance urgency and usability while ensuring compliance with sweepstakes regulations.
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Wordpress</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Shopify</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Next.js</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">HTML & Tailwind CSS</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-
-              {/* Project Entry 3 */}
-              <a href="https://www.talzennaxtandi.com/" target="_blank" rel="noopener noreferrer" className="block">
-                <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
-                  <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
-                    {/* Preview Window */}
-                    <div className="w-full lg:w-48 flex-shrink-0">
-                      <WebsitePreview 
-                        imagePath="/talzenna.jpg " 
-                        fallbackGradient="from-[#10B981] to-[#3B82F6]"
-                        alt="Talzennaxtandi website preview"
-                      />
-                    </div>
-                    
-                    {/* Project Details */}
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-3">
-                        <h3 className="text-l font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300">
-                          Pfizer
-                        </h3>
-                        <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                      </div>
-                      <p className="text-[#94A3B8] text-sm mb-4">
-                      Designed a responsive website for Pfizer's oncology co-therapy, Talzenna + Xtandi, aimed at healthcare professionals and patients. The site delivers complex medical information in a clear, accessible format while fully complying with FDA regulations and pharmaceutical industry standards. Built with accessibility best practices and regulatory constraints in mind, the design balances medical accuracy with user-friendly interaction across all devices.
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Figma</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">UXCam</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Axure RP</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">User Testing</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-
-              {/* Project Entry 4 */}
-              <a href="https://www.gaylea.com/" target="_blank" rel="noopener noreferrer" className="block">
-                <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
-                  <div className="flex flex-col lg:flex-row gap-4 lg:gap-8">
-                    {/* Preview Window */}
-                    <div className="w-full lg:w-48 flex-shrink-0">
-                      <WebsitePreview 
-                        imagePath="/gaylea.png" 
-                        fallbackGradient="from-[#F59E0B] to-[#EF4444]"
-                        alt="Gay Lea Foods website preview"
-                      />
-                    </div>
-                    
-                    {/* Project Details */}
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-3">
-                        <h3 className="text-l font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300">
-                          Gay Lea Foods
-                        </h3>
-                        <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                      </div>
-                      <p className="text-[#94A3B8] text-sm mb-4">
-                      Redesigned and developed the official website for Gay Lea Foods, one of Canada's leading dairy cooperatives. The site delivers a modern, accessible digital experience for consumers, retailers, and cooperative members. With full bilingual support (English and French), the website reflects the brand's national reach, showcasing its diverse product range, recipes, and community values in a clean, responsive interface.
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Figma</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">React</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Next.js</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Bilingual Implementation</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Responsive Design</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">CMS Customisation</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-
-            </div>
-          </div>
-          </section>
-
           {/* Blog Section */}
           <section id="blog" ref={blogRef} className="mb-16">
             <h2 className="lg:hidden sticky top-0 z-30 py-2 text-sm font-bold text-white mb-2 tracking-widest">BLOG</h2>
@@ -509,7 +469,7 @@ export default function Home() {
                 <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
                   <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
                     {/* Blog Preview */}
-                    <div className="w-full lg:w-48 flex-shrink-0">
+                    <div className="w-full lg:w-64 flex-shrink-0 lg:-ml-6">
                       <WebsitePreview 
                         imagePath="/blog1.png" 
                         fallbackGradient="from-[#8B5CF6] to-[#EC4899]"
@@ -545,7 +505,7 @@ export default function Home() {
                 <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
                   <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
                     {/* Blog Preview */}
-                    <div className="w-full lg:w-48 flex-shrink-0">
+                    <div className="w-full lg:w-64 flex-shrink-0 lg:-ml-6">
                       <WebsitePreview 
                         imagePath="/top5blog.png" 
                         fallbackGradient="from-[#10B981] to-[#3B82F6]"

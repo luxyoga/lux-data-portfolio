@@ -17,7 +17,7 @@ export default function WebsitePreview({
 
   if (imageError) {
     return (
-      <div className={`w-48 h-32 flex-shrink-0 bg-gradient-to-br ${fallbackGradient} rounded-lg overflow-hidden relative`}>
+      <div className={`w-64 h-32 flex-shrink-0 bg-gradient-to-br ${fallbackGradient} rounded-lg overflow-hidden relative`}>
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">
@@ -30,11 +30,11 @@ export default function WebsitePreview({
   }
 
   return (
-    <div className="w-48 h-32 flex-shrink-0 rounded-lg overflow-hidden relative">
+    <div className="w-64 h-32 flex-shrink-0 rounded-lg overflow-hidden relative bg-gray-900">
       <img 
         src={imagePath} 
         alt={alt}
-        className="w-full h-full object-cover"
+        className="w-full h-full object-contain"
         onError={() => setImageError(true)}
       />
       <div className="absolute inset-0 bg-black/10 hover:bg-black/20 transition-colors duration-300"></div>
