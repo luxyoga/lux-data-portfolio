@@ -9,7 +9,6 @@ const menuItems = [
   { id: "about", label: "About" },
   { id: "projects", label: "Projects" },
   { id: "experience", label: "Experience" },
-  { id: "blog", label: "Blog" },
 ];
 
 export default function Home() {
@@ -20,7 +19,6 @@ export default function Home() {
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   const experienceRef = useRef(null);
-  const blogRef = useRef(null);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -35,7 +33,6 @@ export default function Home() {
       { id: "about", ref: aboutRef },
       { id: "projects", ref: projectsRef },
       { id: "experience", ref: experienceRef },
-      { id: "blog", ref: blogRef },
     ];
     const observer = new window.IntersectionObserver(
       (entries) => {
@@ -89,7 +86,7 @@ export default function Home() {
           <p className="text-m text-[#94A3B8] mb-6">I transform complex data into actionable insights that drive business decisions and strategic growth.</p>
           <div className="flex gap-4 text-2xl text-[#94A3B8]">
             <a href="https://www.linkedin.com/in/luxyoga/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
-            <a href="https://www.instagram.com/lux.productdesign/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
+            <a href="https://www.instagram.com/lux.dataflow/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
             <a href="https://github.com/luxyoga" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FaGithub /></a>
             <a href="https://www.goodreads.com/user/show/192467159-lux-yogasegaran" target="_blank" rel="noopener noreferrer" aria-label="Goodreads"><FaGoodreads /></a>
             <a href="mailto:luxman.yoga@gmail.com" aria-label="Email"><FaEnvelope /></a>
@@ -135,7 +132,7 @@ export default function Home() {
             {/* Social Links */}
             <div className="flex gap-4 text-xl text-[#94A3B8] mt-12">
               <a href="https://www.linkedin.com/in/luxyoga/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-[#5DE7D4] transition-colors duration-300"><FaLinkedin /></a>
-              <a href="https://www.instagram.com/lux.productdesign/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-[#5DE7D4] transition-colors duration-300"><FaInstagram /></a>
+              <a href="https://www.instagram.com/lux.dataflow/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-[#5DE7D4] transition-colors duration-300"><FaInstagram /></a>
               <a href="https://github.com/luxyoga" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-[#5DE7D4] transition-colors duration-300"><FaGithub /></a>
               <a href="https://www.goodreads.com/user/show/192467159-lux-yogasegaran" target="_blank" rel="noopener noreferrer" aria-label="Goodreads" className="hover:text-[#5DE7D4] transition-colors duration-300"><FaGoodreads /></a>
               <a href="mailto:luxman.yoga@gmail.com" aria-label="Email" className="hover:text-[#5DE7D4] transition-colors duration-300"><FaEnvelope /></a>
@@ -149,10 +146,7 @@ export default function Home() {
             <section id="about" ref={aboutRef} className="mb-16">
               <h2 className="lg:hidden sticky top-0 z-30 py-2 text-sm font-bold text-white mb-2 tracking-widest">ABOUT</h2>
               <p className="text-m text-[#94A3B8] mb-4">
-              I'm a data & analytics professional with a foundation in Economics and Accounting, bringing 7+ years of experience in project management and strategic thinking to the data field. I specialize in ETL processes, data cleaning, and data visualization using Python, SQL, and Tableau/Power BI. I excel at translating complex datasets into clear insights that drive strategic decisions.
-              </p>
-              <p className="text-m text-[#94A3B8] mb-4">
-                I combine analytical rigor with business acumen to deliver data-driven solutions that solve real business problems. My approach includes data mining, exploratory data analysis (EDA), and creating interactive dashboards using tools like Power BI, Tableau and Streamlit. I'm proficient in A/B testing, and database management systems including PostgreSQL and MySQL. My project management background enables me to lead data initiatives from requirements gathering through deployment and monitoring.
+              Data professional with 6+ years in Financial Analysis & Accounting and 5 years across Project Management, UX, and Web Development. I bridge business and technology to deliver analytics, automation, and end-to-end data solutions. Proficient in SQL, Python, BI (Power BI/Tableau), and ETL/orchestration; hands-on with PySpark, Airflow, Docker, Streamlit, and DuckDB. I translate messy, real-world data into decisions that improve margin, forecasting accuracy, and operational efficiency.
               </p>
               <p className="text-m text-[#94A3B8] mb-4">
                 In my spare time - I'm usually painting miniatures, playing TCGs, or reading.
@@ -179,9 +173,10 @@ export default function Home() {
                   <div className="w-full lg:w-64 flex-shrink-0 lg:-ml-6">
                     <a href="https://copenhagen-bike-pipeline.streamlit.app/" target="_blank" rel="noopener noreferrer">
                       <WebsitePreview 
-                        imagePath="/copenhagen-biking-analysis.png" 
+                        imagePath="/cphscreenshot3.jpg" 
                         fallbackGradient="from-[#10B981] to-[#3B82F6]"
                         alt="Copenhagen Biking Analysis Dashboard preview"
+                        objectFit="cover"
                       />
                     </a>
                   </div>
@@ -238,6 +233,7 @@ export default function Home() {
                         imagePath="/dashboardscreenshot1.png" 
                         fallbackGradient="from-[#5DE7D4] to-[#8B5CF6]"
                         alt="VGC Pokémon Usage Stats Dashboard preview"
+                        objectFit="cover"
                       />
                     </a>
                   </div>
@@ -308,228 +304,118 @@ export default function Home() {
             <div className="space-y-0">
               <div className="-mb-4">
 
-              {/* Experience Entry 1 - Krown */}
-              <a href="https://www.krownapp.com/" target="_blank" rel="noopener noreferrer" className="block">
+              {/* Experience Entry 1 - BDP Quadrangle */}
+              <a href="https://www.bdp.com/ca" target="_blank" rel="noopener noreferrer" className="block">
                 <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
                   <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
                     <div className="w-full lg:w-24 flex-shrink-0">
-                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1">2025 — PRESENT</p>
+                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1">02/2020 — 11/2023</p>
                     </div>
                     <div className="flex-1">
                       <div className="flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-2 mb-2">
                         <h3 className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 lg:whitespace-nowrap">
-                          UX/UI Designer (Freelance)
+                          Senior Project Accountant
                         </h3>
                         <span className="hidden lg:inline text-[#94A3B8]">·</span>
                         <span className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 flex items-center gap-1 lg:whitespace-nowrap">
-                          Krown
+                          BDP Quadrangle
                           <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                           </svg>
                         </span>
                       </div>
                       <p className="text-[#94A3B8] text-sm mb-3">
-                      Redesigned user experience for innovative location-based dating application, focusing on simplicity and minimal-click interactions to facilitate authentic romantic connections. Collaborated with development team to iterate on MVP designs based on real user feedback and research-backed design principles. Created design systems and visual interfaces that prioritize accessibility and user engagement.
+                      Led comprehensive project finance data management across residential and commercial portfolios, developing KPI dashboards for cost, revenue, WIP, and variance tracking that improved budget accuracy to ≤5%.<br /><br />
+                      Streamlined operations by automating monthly reporting workflows using Excel, SQL, and Python, reducing cycle time by 25%.<br /><br />
+                      Collaborated closely with project managers on burn rate forecasting, margin analysis, and cash flow projections, implementing early warning systems for at-risk projects that enhanced overall profitability by 15%.
                       </p>
                       <div className="flex flex-wrap gap-2">
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Figma</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Mobile Design</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Design Systems</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">User Research</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Prototyping</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Project Finance</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">KPI Dashboards</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Excel</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">SQL</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Python</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Budgeting</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Forecasting</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Analysis</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </a>
 
-              {/* Experience Entry 2 */}
-              <a href="https://www.ascendfs.com/" target="_blank" rel="noopener noreferrer" className="block">
+              {/* Experience Entry 2 - Arcadis */}
+              <a href="https://www.arcadis.com/en" target="_blank" rel="noopener noreferrer" className="block">
                 <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
                   <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
                     <div className="w-full lg:w-24 flex-shrink-0">
-                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1">2023 — 2025</p>
+                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1">01/2018 — 02/2020</p>
                     </div>
                     <div className="flex-1">
                       <div className="flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-2 mb-2">
                         <h3 className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 lg:whitespace-nowrap">
-                          Project Manager
+                          Financial Analyst
                         </h3>
                         <span className="hidden lg:inline text-[#94A3B8]">·</span>
                         <span className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 flex items-center gap-1 lg:whitespace-nowrap">
-                          Ascend Fundraising Solutions
+                          Arcadis
                           <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                           </svg>
                         </span>
                       </div>
-                      <p className="text-m text-[#94A3B8] lg:-mt-2 mb-2">Web Developer</p>
                       <p className="text-[#94A3B8] text-sm mb-3">
-                      Lead web development projects from conception to delivery while managing cross-functional teams and timelines. Build accessible, SEO-optimized solutions and coordinate with designers and product managers to ensure research findings drive development priorities. Analyze user data to inform project scope and measure success metrics.
+                      Developed comprehensive revenue and billing reports with interactive dashboards for executive leadership, significantly enhancing visibility into contract modifications and accounts receivable status.<br /><br />
+                      Performed detailed variance analysis and scenario modeling to support strategic pricing decisions and optimize staffing allocations across multiple projects.
                       </p>
                       <div className="flex flex-wrap gap-2">
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">JavaScript</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Next.js</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">React</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">WordPress</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Shopify</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">HTML & SCSS</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Financial Reporting</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Dashboards</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Revenue Analysis</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Billing</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Variance Analysis</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Scenario Modeling</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Contract Management</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Pricing Strategy</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </a>
 
-              {/* Experience Entry 2 */}
-              <a href="https://tankww.com/en/" target="_blank" rel="noopener noreferrer" className="block">
+              {/* Experience Entry 3 - Holt Renfrew */}
+              <a href="https://www.holtrenfrew.com" target="_blank" rel="noopener noreferrer" className="block">
                 <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
                   <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
                     <div className="w-full lg:w-24 flex-shrink-0">
-                      <p className="text-xs text-[#94A3B8] lg:pt-1">2022 — 2023</p>
+                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1">03/2016 — 01/2018</p>
                     </div>
                     <div className="flex-1">
                       <div className="flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-2 mb-2">
                         <h3 className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300">
-                          UX Designer
+                          Project Accountant
                         </h3>
                         <span className="hidden lg:inline text-[#94A3B8]">·</span>
                         <span className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 flex items-center gap-1">
-                          Tank Worldwide
-                          <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                          </svg>
-                        </span>
-                      </div>
-                      <div className="text-sm text-[#94A3B8] mb-2">
-                      </div>
-                      <p className="text-[#94A3B8] text-sm mb-3">
-                      Develop user-centered healthcare digital products within complex regulatory frameworks for major pharmaceutical clients. Collaborate across disciplines to deliver FDA and Health Canada compliant solutions while maintaining optimal user experiences. Contribute innovative feature concepts through structured ideation and data-driven design processes.                  </p>
-                      <div className="flex flex-wrap gap-2">
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Figma</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">UserTesting</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Adobe XD</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">UXCam</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Axure RP</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-
-              {/* Experience Entry 3 */}
-              <a href="https://luxdesign.studio/" target="_blank" rel="noopener noreferrer" className="block">
-                <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
-                  <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
-                    <div className="w-full lg:w-24 flex-shrink-0">
-                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1">2017 — PRESENT</p>
-                    </div>
-                    <div className="flex-1">
-                      <div className="flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-2 mb-2">
-                        <h3 className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 lg:whitespace-nowrap">
-                          Freelance Web Designer, Web Developer
-                        </h3>
-                        <span className="hidden lg:inline text-[#94A3B8]">·</span>
-                        <span className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 flex items-center gap-1 lg:whitespace-nowrap">
-                          Lux Design
+                          Holt Renfrew
                           <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                           </svg>
                         </span>
                       </div>
                       <p className="text-[#94A3B8] text-sm mb-3">
-                        Build custom digital solutions across WordPress, Elementor, Shopify, and fully custom platforms based on client requirements and project scope. Conduct user research, usability testing, and competitive analysis to guide platform selection and design decisions. Provide ongoing support through feature development and technical support.
+                      Managed capital expenditure tracking for major retail expansion initiatives, creating comprehensive reporting packages that aligned construction and merchandising teams on project progress and budget adherence.<br /><br />
+                      Enhanced operational efficiency by improving ERP workflows and establishing data quality standards across all cost centers.
                       </p>
                       <div className="flex flex-wrap gap-2">
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">WordPress</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Elementor</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Shopify</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">HTML & CSS</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Javascript</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">jQuery</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Next.js</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">React</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Tailwind CSS</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-          </a>
-        </div>
-          </div>
-          </section>
-
-          {/* Blog Section */}
-          <section id="blog" ref={blogRef} className="mb-16">
-            <h2 className="lg:hidden sticky top-0 z-30 py-2 text-sm font-bold text-white mb-2 tracking-widest">BLOG</h2>
-            <div className="space-y-0">
-              <div className="-mb-4">
-              
-              {/* Blog Post 1 */}
-              <a href="https://luxdesign.studio/topbooks/" target="_blank" rel="noopener noreferrer" className="block">
-                <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
-                  <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
-                    {/* Blog Preview */}
-                    <div className="w-full lg:w-64 flex-shrink-0 lg:-ml-6">
-                      <WebsitePreview 
-                        imagePath="/blog1.png" 
-                        fallbackGradient="from-[#8B5CF6] to-[#EC4899]"
-                        alt="Top 5 Books Every UX Designer and Web Developer Should Read"
-                      />
-                    </div>
-                    
-                    {/* Blog Details */}
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-3">
-                        <h3 className="text-l font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300">
-                        Top 5 Books Every UX Designer and Web Developer Should Read
-                        </h3>
-                        <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                      </div>
-                      <p className="text-[#94A3B8] text-sm mb-4">
-                      A curated list of must-read books that helped shape my journey as a UX designer and front-end developer. From design thinking to coding best practices, these picks offer practical insights, inspiration, and foundational knowledge for anyone building digital products. 
-                      </p>
-                      <div className="flex items-center gap-4 text-xs text-[#94A3B8]">
-                        <span>July 20, 2024</span>
-                        <span>•</span>
-                        <span>5 min read</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-
-              {/* Blog Post 2 */}
-              <a href="https://luxdesign.studio/top-5-ux-mistakes/" target="_blank" rel="noopener noreferrer" className="block">
-                <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
-                  <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
-                    {/* Blog Preview */}
-                    <div className="w-full lg:w-64 flex-shrink-0 lg:-ml-6">
-                      <WebsitePreview 
-                        imagePath="/top5blog.png" 
-                        fallbackGradient="from-[#10B981] to-[#3B82F6]"
-                        alt="Top 5 Common UX Mistakes and How to Fix Them"
-                      />
-                    </div>
-                    
-                    {/* Blog Details */}
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-3">
-                        <h3 className="text-l font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300">
-                        Top 5 Common UX Mistakes and How to Fix Them
-                        </h3>
-                        <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                        </svg>
-                      </div>
-                      <p className="text-[#94A3B8] text-sm mb-4">
-                      A quick, practical guide to the most common UX design pitfalls — from neglecting user research to overcomplicating interfaces. This post outlines real-world mistakes and how to fix them, helping designers build more intuitive, user-focused products.
-                      </p>
-                      <div className="flex items-center gap-4 text-xs text-[#94A3B8]">
-                        <span>August 25, 2024</span>
-                        <span>•</span>
-                        <span>4 min read</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Capex Tracking</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Project Management</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Retail Operations</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Reporting</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">ERP Systems</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Workflow Improvement</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Financial Data Quality</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Cost Management</span>
                       </div>
                     </div>
                   </div>
@@ -539,6 +425,7 @@ export default function Home() {
             </div>
           </div>
           </section>
+
           </div>
         </main>
       </div>

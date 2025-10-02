@@ -6,12 +6,14 @@ interface WebsitePreviewProps {
   imagePath: string;
   fallbackGradient?: string;
   alt?: string;
+  objectFit?: 'contain' | 'cover' | 'fill';
 }
 
 export default function WebsitePreview({ 
   imagePath, 
   fallbackGradient = "from-[#5DE7D4] to-[#8B5CF6]",
-  alt = "Project preview"
+  alt = "Project preview",
+  objectFit = "contain"
 }: WebsitePreviewProps) {
   const [imageError, setImageError] = useState(false);
 
@@ -34,7 +36,7 @@ export default function WebsitePreview({
       <img 
         src={imagePath} 
         alt={alt}
-        className="w-full h-full object-contain"
+        className={`w-full h-full object-${objectFit}`}
         onError={() => setImageError(true)}
       />
       <div className="absolute inset-0 bg-black/10 hover:bg-black/20 transition-colors duration-300"></div>
