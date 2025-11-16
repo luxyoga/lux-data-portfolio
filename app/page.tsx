@@ -410,17 +410,95 @@ export default function Home() {
             <div className="space-y-0">
               <div className="-mb-4">
 
-              {/* Experience Entry 1 - BDP Quadrangle */}
-              <a href="https://www.bdp.com/ca" target="_blank" rel="noopener noreferrer" className="block">
+              {/* Experience Entry 1 - JD Sports */}
+              <a href="https://www.jdsports.com" target="_blank" rel="noopener noreferrer" className="block">
                 <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
                   <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
-                    <div className="w-full lg:w-24 flex-shrink-0">
-                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1">02/2020 — 11/2023</p>
+                    <div className="w-full lg:w-28 flex-shrink-0">
+                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1 lg:text-right">06/2024 — PRESENT</p>
                     </div>
                     <div className="flex-1">
                       <div className="flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-2 mb-2">
                         <h3 className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 lg:whitespace-nowrap">
-                          Senior Project Accountant
+                          Business Analyst
+                        </h3>
+                        <span className="hidden lg:inline text-[#94A3B8]">·</span>
+                        <span className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 flex items-center gap-1 lg:whitespace-nowrap">
+                          JD Sports
+                          <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                          </svg>
+                        </span>
+                      </div>
+                      <p className="text-[#94A3B8] text-sm mb-3">
+                      Analyzed retail sales, product mix, and customer behavior data across European and North American stores to identify performance trends and drive merchandising decisions.<br /><br />
+                      Built and maintained Tableau and Excel dashboards tracking weekly sell-through, category performance, and store-level KPIs, improving visibility for district and regional managers.<br /><br />
+                      Conducted margin and profitability analysis by brand and product line, enabling more informed pricing and promotional strategies.
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Analysis</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Tableau</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Excel</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Retail Analytics</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">KPI Dashboards</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Profitability Analysis</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Business Intelligence</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              {/* Experience Entry 2 - Ascend Fundraising Solutions */}
+              <a href="https://www.ascendfs.com/" target="_blank" rel="noopener noreferrer" className="block">
+                <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
+                  <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
+                    <div className="w-full lg:w-28 flex-shrink-0">
+                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1 lg:text-right">11/2023 — 06/2025</p>
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-2 mb-2">
+                        <h3 className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 lg:whitespace-nowrap">
+                          Product Data Analyst
+                        </h3>
+                        <span className="hidden lg:inline text-[#94A3B8]">·</span>
+                        <span className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 flex items-center gap-1 lg:whitespace-nowrap">
+                          Ascend Fundraising Solutions
+                          <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                          </svg>
+                        </span>
+                      </div>
+                      <p className="text-[#94A3B8] text-sm mb-3">
+                      Analyzed customer and product interaction data to identify usage patterns and opportunities for improving feature adoption and client engagement.<br /><br />
+                      Partnered with Product and Marketing teams to define KPIs and success metrics for new feature launches and measure ROI impact.<br /><br />
+                      Built and maintained cross-functional Power BI dashboards tracking NPS, churn, and ARR per user across multiple data sources.
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Power BI</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Analysis</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Product Analytics</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">KPI Definition</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">ROI Analysis</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Cross-functional Collaboration</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Dashboards</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              {/* Experience Entry 3 - BDP Quadrangle */}
+              <a href="https://www.bdp.com/ca" target="_blank" rel="noopener noreferrer" className="block">
+                <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
+                  <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
+                    <div className="w-full lg:w-28 flex-shrink-0">
+                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1 lg:text-right">11/2020 — 11/2023</p>
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-2 mb-2">
+                        <h3 className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 lg:whitespace-nowrap">
+                          Data Analyst
                         </h3>
                         <span className="hidden lg:inline text-[#94A3B8]">·</span>
                         <span className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 flex items-center gap-1 lg:whitespace-nowrap">
@@ -431,97 +509,18 @@ export default function Home() {
                         </span>
                       </div>
                       <p className="text-[#94A3B8] text-sm mb-3">
-                      Led comprehensive project finance data management across residential and commercial portfolios, developing KPI dashboards for cost, revenue, WIP, and variance tracking that improved budget accuracy to ≤5%.<br /><br />
-                      Streamlined operations by automating monthly reporting workflows using Excel, SQL, and Python, reducing cycle time by 25%.<br /><br />
-                      Collaborated closely with project managers on burn rate forecasting, margin analysis, and cash flow projections, implementing early warning systems for at-risk projects that enhanced overall profitability by 15%.
+                      Partnered with engineering and data teams to improve data ingestion pipelines and schema consistency.<br /><br />
+                      Designed Power BI dashboards to visualize KPIs and enable better decision-making for product and finance stakeholders.<br /><br />
+                      Consolidated campaign, CRM, and revenue data to connect marketing performance with product usage and financial outcomes.
                       </p>
                       <div className="flex flex-wrap gap-2">
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Project Finance</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Power BI</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">ETL Pipelines</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Integration</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Visualization</span>
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">KPI Dashboards</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Excel</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">SQL</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Python</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Budgeting</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Forecasting</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Analysis</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-
-              {/* Experience Entry 2 - Arcadis */}
-              <a href="https://www.arcadis.com/en" target="_blank" rel="noopener noreferrer" className="block">
-                <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
-                  <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
-                    <div className="w-full lg:w-24 flex-shrink-0">
-                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1">01/2018 — 02/2020</p>
-                    </div>
-                    <div className="flex-1">
-                      <div className="flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-2 mb-2">
-                        <h3 className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 lg:whitespace-nowrap">
-                          Financial Analyst
-                        </h3>
-                        <span className="hidden lg:inline text-[#94A3B8]">·</span>
-                        <span className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 flex items-center gap-1 lg:whitespace-nowrap">
-                          Arcadis
-                          <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                          </svg>
-                        </span>
-                      </div>
-                      <p className="text-[#94A3B8] text-sm mb-3">
-                      Developed comprehensive revenue and billing reports with interactive dashboards for executive leadership, significantly enhancing visibility into contract modifications and accounts receivable status.<br /><br />
-                      Performed detailed variance analysis and scenario modeling to support strategic pricing decisions and optimize staffing allocations across multiple projects.
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Financial Reporting</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Dashboards</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Revenue Analysis</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Billing</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Variance Analysis</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Scenario Modeling</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Contract Management</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Pricing Strategy</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-
-              {/* Experience Entry 3 - Holt Renfrew */}
-              <a href="https://www.holtrenfrew.com" target="_blank" rel="noopener noreferrer" className="block">
-                <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
-                  <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
-                    <div className="w-full lg:w-24 flex-shrink-0">
-                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1">03/2016 — 01/2018</p>
-                    </div>
-                    <div className="flex-1">
-                      <div className="flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-2 mb-2">
-                        <h3 className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300">
-                          Project Accountant
-                        </h3>
-                        <span className="hidden lg:inline text-[#94A3B8]">·</span>
-                        <span className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 flex items-center gap-1">
-                          Holt Renfrew
-                          <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                          </svg>
-                        </span>
-                      </div>
-                      <p className="text-[#94A3B8] text-sm mb-3">
-                      Managed capital expenditure tracking for major retail expansion initiatives, creating comprehensive reporting packages that aligned construction and merchandising teams on project progress and budget adherence.<br /><br />
-                      Enhanced operational efficiency by improving ERP workflows and establishing data quality standards across all cost centers.
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Capex Tracking</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Project Management</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Retail Operations</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Reporting</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">ERP Systems</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Workflow Improvement</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Financial Data Quality</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Cost Management</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">CRM Analytics</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Cross-functional Collaboration</span>
                       </div>
                     </div>
                   </div>
