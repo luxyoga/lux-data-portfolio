@@ -415,7 +415,7 @@ export default function Home() {
                 <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
                   <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
                     <div className="w-full lg:w-28 flex-shrink-0">
-                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1 lg:text-right">06/2024 — PRESENT</p>
+                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1 lg:text-right">06/2024 — 12/2025</p>
                     </div>
                     <div className="flex-1">
                       <div className="flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-2 mb-2">
