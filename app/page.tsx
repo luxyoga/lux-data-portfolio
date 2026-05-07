@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
-import { FaLinkedin, FaInstagram, FaGithub, FaGoodreads, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaGithub, FaEnvelope } from "react-icons/fa";
 import WebsitePreview from './components/WebsitePreview';
 
 const menuItems = [
@@ -82,13 +82,12 @@ export default function Home() {
       <header className="lg:hidden block w-full bg-[#0F172A]">
         <div className="px-6 py-12">
           <h1 className="text-4xl font-bold text-white mb-2">Lux Yoga</h1>
-          <p className="text-lg sm:text-xl text-white mb-4 whitespace-nowrap">Data Engineering & Business Analysis</p>
-          <p className="text-m text-[#94A3B8] mb-6">I transform complex data into actionable insights that drive business decisions and strategic growth.</p>
+          <p className="text-lg sm:text-xl text-white mb-4 whitespace-nowrap">Data & Analytics Engineer</p>
+          <p className="text-m text-[#94A3B8] mb-6">End-to-end analytics, from pipeline to dashboard. I build the data infrastructure that turns raw numbers into decisions.</p>
           <div className="flex gap-4 text-2xl text-[#94A3B8]">
             <a href="https://www.linkedin.com/in/luxyoga/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
             <a href="https://www.instagram.com/lux.dataflow/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
             <a href="https://github.com/luxyoga" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FaGithub /></a>
-            <a href="https://www.goodreads.com/user/show/192467159-lux-yogasegaran" target="_blank" rel="noopener noreferrer" aria-label="Goodreads"><FaGoodreads /></a>
             <a href="mailto:luxman.yoga@gmail.com" aria-label="Email"><FaEnvelope /></a>
           </div>
         </div>
@@ -99,8 +98,8 @@ export default function Home() {
         <aside className="hidden lg:flex flex-col fixed left-0 top-0 h-full w-[40vw] max-w-[700px] px-32 z-10 backdrop-blur-md bg-transparent">
           <div className="flex flex-col h-full ml-4" style={{ paddingTop: '6rem' }}>
             <h1 className="text-5xl font-bold mb-2">Lux Yoga</h1>
-            <h2 className="text-xl font-medium text-white mb-8 whitespace-nowrap">Data Engineering & Business Analysis</h2>
-            <p className="mb-14 text-m text-[#94A3B8]">I transform complex data into actionable insights that drive business decisions and strategic growth.</p>
+            <h2 className="text-xl font-medium text-white mb-8 whitespace-nowrap">Data & Analytics Engineer</h2>
+            <p className="mb-14 text-m text-[#94A3B8]">End-to-end analytics, from pipeline to dashboard. I build the data infrastructure that turns raw numbers into decisions.</p>
             <nav className="flex flex-col gap-8 mt-8">
               {menuItems.map((item) => (
                 <button
@@ -134,7 +133,6 @@ export default function Home() {
               <a href="https://www.linkedin.com/in/luxyoga/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-[#5DE7D4] transition-colors duration-300"><FaLinkedin /></a>
               <a href="https://www.instagram.com/lux.dataflow/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-[#5DE7D4] transition-colors duration-300"><FaInstagram /></a>
               <a href="https://github.com/luxyoga" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-[#5DE7D4] transition-colors duration-300"><FaGithub /></a>
-              <a href="https://www.goodreads.com/user/show/192467159-lux-yogasegaran" target="_blank" rel="noopener noreferrer" aria-label="Goodreads" className="hover:text-[#5DE7D4] transition-colors duration-300"><FaGoodreads /></a>
               <a href="mailto:luxman.yoga@gmail.com" aria-label="Email" className="hover:text-[#5DE7D4] transition-colors duration-300"><FaEnvelope /></a>
             </div>
           </div>
@@ -146,10 +144,16 @@ export default function Home() {
             <section id="about" ref={aboutRef} className="mb-16">
               <h2 className="lg:hidden sticky top-0 z-30 py-2 text-sm font-bold text-white mb-2 tracking-widest">ABOUT</h2>
               <p className="text-m text-[#94A3B8] mb-4">
-              Data professional with 6+ years in Financial Analysis & Accounting and 5 years across Project Management, UX, and Web Development. I bridge business and technology to deliver analytics, automation, and end-to-end data solutions. Proficient in SQL, Python, BI (Power BI/Tableau), and ETL/orchestration; hands-on with PySpark, Airflow, Docker, Streamlit, and DuckDB. I translate messy, real-world data into decisions that improve margin, forecasting accuracy, and operational efficiency.
+              Data professional with a background spanning analytics, BI, and data engineering across retail, SaaS, and architecture. I work across the full analytics stack, from ETL pipelines and data modelling to Power BI and Tableau dashboards that actually get used. Comfortable in SQL and Python, with hands-on experience in Airflow, PySpark, Docker, and DuckDB.
               </p>
               <p className="text-m text-[#94A3B8] mb-4">
-                In my spare time - I'm usually painting miniatures, playing TCGs, or reading.
+              PMP certified.
+              </p>
+              <p className="text-m text-[#94A3B8] mb-4">
+              Previously at JD Sports (Copenhagen) and Ascend Fundraising Solutions (Toronto). Open to data and analytics engineering roles in Copenhagen or remote opportunities.
+              </p>
+              <p className="text-m text-[#94A3B8] mb-4">
+              Fluent in English, actively learning Danish (A2).
               </p>
             </section>
           
@@ -187,7 +191,7 @@ export default function Home() {
                       </svg>
                     </div>
                     <p className="text-[#94A3B8] text-sm mb-4">
-                    Interactive Tableau dashboard analyzing 10 years of footwear sales across Europe, the UK, and North America. Tracks year-over-year performance, profit trends, and product category insights using cleaned SQL and CSV data sources.
+                    Interactive Tableau dashboard analysing ten years of footwear sales across Europe, the UK, and North America. Tracks year-over-year revenue, profit margins, and product category performance. Built for a merchandising use case: identifying which categories are underperforming by region and where pricing adjustments would improve margin. Data cleaned and modelled in SQL and Python before visualisation.
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Tableau</span>
@@ -300,7 +304,7 @@ export default function Home() {
                       </svg>
                     </div>
                     <p className="text-[#94A3B8] text-sm mb-4">
-                    An end-to-end data engineering pipeline analyzing cycling traffic in Copenhagen and its relationship with weather conditions. Built with Apache Airflow for orchestration, PySpark for distributed ETL processing, and Streamlit for interactive dashboards. Processes 10 years of real Copenhagen cycling data (2005-2014) from Kaggle and weather data from Open-Meteo API to reveal seasonal patterns and weather correlations.
+                    An end-to-end data engineering pipeline analysing cycling traffic across Copenhagen and its relationship with weather conditions. Built with Apache Airflow for orchestration, PySpark for distributed ETL, PostgreSQL for storage, and Streamlit for an interactive dashboard. Surfaces ten years of real cycling data to reveal seasonal patterns and weather correlations — the kind of operational insight relevant to urban planning and transport analytics.
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Apache Airflow</span>
@@ -357,7 +361,7 @@ export default function Home() {
                       </svg>
                     </div>
                     <p className="text-[#94A3B8] text-sm mb-4">
-                    An automated data engineering project that ingests competitive Pokémon VGC usage data from Smogon/Showdown, processes it into a queryable DuckDB database, and serves an interactive dashboard with Streamlit. Features ETL pipelines, automated monthly ingestion via GitHub Actions, and comprehensive analytics of metagame trends.
+                    A project demonstrating the full loop: scheduled ingestion, structured storage, and a live queryable front end. Automated pipeline ingesting competitive Pokémon usage data from Smogon, processing it into a queryable DuckDB database, and serving an interactive Streamlit dashboard. Monthly ingestion runs automatically via GitHub Actions with no manual intervention.
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Python</span>
@@ -416,11 +420,12 @@ export default function Home() {
                   <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
                     <div className="w-full lg:w-28 flex-shrink-0">
                       <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1 lg:text-right">06/2024 — 12/2025</p>
+                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:text-right">Copenhagen</p>
                     </div>
                     <div className="flex-1">
                       <div className="flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-2 mb-2">
                         <h3 className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 lg:whitespace-nowrap">
-                          Business Analyst
+                          Business Analyst (Contract)
                         </h3>
                         <span className="hidden lg:inline text-[#94A3B8]">·</span>
                         <span className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 flex items-center gap-1 lg:whitespace-nowrap">
@@ -455,6 +460,7 @@ export default function Home() {
                   <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
                     <div className="w-full lg:w-28 flex-shrink-0">
                       <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1 lg:text-right">11/2023 — 06/2025</p>
+                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:text-right">Toronto</p>
                     </div>
                     <div className="flex-1">
                       <div className="flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-2 mb-2">
@@ -494,6 +500,7 @@ export default function Home() {
                   <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
                     <div className="w-full lg:w-28 flex-shrink-0">
                       <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1 lg:text-right">11/2020 — 11/2023</p>
+                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:text-right">Toronto</p>
                     </div>
                     <div className="flex-1">
                       <div className="flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-2 mb-2">
