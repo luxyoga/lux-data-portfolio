@@ -453,7 +453,7 @@ export default function Home() {
           {/* Resume Link */}
           <section className="mb-16">
             <a 
-              href="/resume.html" 
+              href="/Lux_Yoga_Resume_2026.pdf"
           target="_blank"
           rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-m font-semibold text-[#94A3B8] hover:text-[#5DE7D4] transition-colors duration-300"
@@ -475,7 +475,7 @@ export default function Home() {
                 <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
                   <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
                     <div className="w-full lg:w-28 flex-shrink-0">
-                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1 lg:text-right">06/2024 — 12/2025</p>
+                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1 lg:text-right">06/2025 — 12/2025</p>
                       <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:text-right">Copenhagen</p>
                     </div>
                     <div className="flex-1">
@@ -492,14 +492,14 @@ export default function Home() {
                         </span>
                       </div>
                       <p className="text-[#94A3B8] text-sm mb-3">
-                      Analyzed retail sales, product mix, and customer behavior data across European and North American stores to identify performance trends and drive merchandising decisions.<br /><br />
-                      Built and maintained Tableau and Excel dashboards tracking weekly sell-through, category performance, and store-level KPIs, improving visibility for district and regional managers.<br /><br />
-                      Conducted margin and profitability analysis by brand and product line, enabling more informed pricing and promotional strategies.
+                      Queried SQL retail datasets and built Tableau dashboards analysing sell-through, margin, and store KPIs across 100+ EU and NA stores to support merchandising and pricing decisions.<br /><br />
+                      Designed and automated 10+ dashboards, improving reporting efficiency by 30%+ and enabling faster access to performance insights for distributed commercial teams.<br /><br />
+                      Delivered margin and profitability insights on product performance and regional demand, informing pricing and promotional strategies across 7-figure revenue lines.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Analysis</span>
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Tableau</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Excel</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">SQL</span>
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Retail Analytics</span>
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">KPI Dashboards</span>
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Profitability Analysis</span>
@@ -532,17 +532,16 @@ export default function Home() {
                         </span>
                       </div>
                       <p className="text-[#94A3B8] text-sm mb-3">
-                      Analyzed customer and product interaction data to identify usage patterns and opportunities for improving feature adoption and client engagement.<br /><br />
-                      Partnered with Product and Marketing teams to define KPIs and success metrics for new feature launches and measure ROI impact.<br /><br />
-                      Built and maintained cross-functional Power BI dashboards tracking NPS, churn, and ARR per user across multiple data sources.
+                      Queried and modelled 650K+ product interaction events in Snowflake to surface usage patterns and drive feature adoption decisions.<br /><br />
+                      Partnered with Product and Marketing to define and standardise KPIs for 10+ launches, including metric definitions and edge case handling, enabling data-driven roadmap prioritisation.<br /><br />
+                      Built Power BI dashboards tracking NPS, churn, and ARR per segment, reducing ad-hoc reporting by 25%+.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Power BI</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Snowflake</span>
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Analysis</span>
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Product Analytics</span>
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">KPI Definition</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">ROI Analysis</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Cross-functional Collaboration</span>
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Dashboards</span>
                       </div>
                     </div>
@@ -572,18 +571,17 @@ export default function Home() {
                         </span>
                       </div>
                       <p className="text-[#94A3B8] text-sm mb-3">
-                      Partnered with engineering and data teams to improve data ingestion pipelines and schema consistency.<br /><br />
-                      Designed Power BI dashboards to visualize KPIs and enable better decision-making for product and finance stakeholders.<br /><br />
-                      Consolidated campaign, CRM, and revenue data to connect marketing performance with product usage and financial outcomes.
+                      Built ETL workflows across SAP and Deltek ERP systems, standardising project accounting and CRM data for financial reporting across 50+ architectural projects.<br /><br />
+                      Created interactive reports used by 20+ stakeholders to track revenue trends, project profitability, and campaign ROI.<br /><br />
+                      Unified billing and accounting data from multiple systems, cutting reporting turnaround by 30% and improving project profitability visibility.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Power BI</span>
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">ETL Pipelines</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">ERP Systems</span>
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Integration</span>
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Visualization</span>
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">KPI Dashboards</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">CRM Analytics</span>
-                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Cross-functional Collaboration</span>
                       </div>
                     </div>
                   </div>
