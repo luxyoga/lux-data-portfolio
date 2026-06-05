@@ -391,12 +391,13 @@ export default function Home() {
               </div>
 
               {/* Toronto Permit Pulse */}
-              <div className="group relative bg-[#0F2235]/40 backdrop-blur-sm rounded-2xl p-6 border border-[#1E3A5F]/30 hover:border-[#5DE7D4]/30 transition-all duration-300">
-                <div className="flex flex-col lg:flex-row gap-6">
+              <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
+                <div className="flex flex-col lg:flex-row gap-4 lg:gap-8">
+                  {/* Preview Window */}
                   <div className="w-full lg:w-64 flex-shrink-0 lg:-ml-6">
                     <a href="https://toronto-nl-sql.streamlit.app/" target="_blank" rel="noopener noreferrer">
                       <WebsitePreview
-                        imagePath=""
+                        imagePath="/toronto_permit_pulse.png"
                         fallbackGradient="from-[#5DE7D4] to-[#2563EB]"
                         alt="Toronto Permit Pulse app preview"
                         objectFit="cover"
@@ -417,13 +418,16 @@ export default function Home() {
                       </svg>
                     </div>
                     <p className="text-[#94A3B8] text-sm mb-4">
-                      NL-to-SQL app that lets anyone query 228,000+ Toronto building permits in plain English, powered by Claude and DuckDB. Ask questions like &ldquo;Which street had the most permits in 2024?&rdquo; and get instant results — no SQL knowledge required.
+                    An NL-to-SQL application that lets anyone query 228,000+ Toronto building permits in plain English, powered by Claude Sonnet and DuckDB. The schema is injected dynamically from live table metadata at request time, keeping the model accurate without any hardcoding. Ask questions like &ldquo;Which street had the most permits in 2024?&rdquo; and get instant SQL results alongside a plain-English explanation of what the query does — no SQL knowledge required.
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Python</span>
                       <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Claude API</span>
                       <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">DuckDB</span>
                       <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Streamlit</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Pandas</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">NL-to-SQL</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Open Data</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <a
