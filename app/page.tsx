@@ -9,6 +9,7 @@ const menuItems = [
   { id: "about", label: "About" },
   { id: "projects", label: "Projects" },
   { id: "experience", label: "Experience" },
+  { id: "blog", label: "Blog" },
 ];
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   const experienceRef = useRef(null);
+  const blogRef = useRef(null);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -33,6 +35,7 @@ export default function Home() {
       { id: "about", ref: aboutRef },
       { id: "projects", ref: projectsRef },
       { id: "experience", ref: experienceRef },
+      { id: "blog", ref: blogRef },
     ];
     const observer = new window.IntersectionObserver(
       (entries) => {
@@ -590,6 +593,82 @@ export default function Home() {
 
             </div>
           </div>
+          </section>
+
+          {/* Blog Section */}
+          <section id="blog" ref={blogRef} className="mb-16">
+            <h2 className="lg:hidden sticky top-0 z-30 py-2 text-sm font-bold text-white mb-2 tracking-widest">BLOG</h2>
+            <div className="space-y-0">
+              <div className="-mb-4">
+
+              {/* Blog Post 1 */}
+              <a href="https://studiolux.substack.com/p/the-top-5-ux-books" target="_blank" rel="noopener noreferrer" className="block">
+                <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
+                  <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
+                    <div className="w-full lg:w-48 flex-shrink-0">
+                      <WebsitePreview
+                        imagePath="/blog1.png"
+                        fallbackGradient="from-[#8B5CF6] to-[#EC4899]"
+                        alt="Top 5 Books Every UX Designer and Web Developer Should Read"
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2 mb-3">
+                        <h3 className="text-l font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300">
+                          Top 5 Books Every UX Designer and Web Developer Should Read
+                        </h3>
+                        <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </div>
+                      <p className="text-[#94A3B8] text-sm mb-4">
+                        A curated list of must-read books that helped shape my journey as a UX designer and front-end developer. From design thinking to coding best practices, these picks offer practical insights, inspiration, and foundational knowledge for anyone building digital products.
+                      </p>
+                      <div className="flex items-center gap-4 text-xs text-[#94A3B8]">
+                        <span>July 20, 2024</span>
+                        <span>•</span>
+                        <span>5 min read</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              {/* Blog Post 2 */}
+              <a href="https://studiolux.substack.com/p/top-5-common-ux-mistakes" target="_blank" rel="noopener noreferrer" className="block">
+                <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
+                  <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
+                    <div className="w-full lg:w-48 flex-shrink-0">
+                      <WebsitePreview
+                        imagePath="/top5blog.png"
+                        fallbackGradient="from-[#10B981] to-[#3B82F6]"
+                        alt="Top 5 Common UX Mistakes and How to Fix Them"
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2 mb-3">
+                        <h3 className="text-l font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300">
+                          Top 5 Common UX Mistakes and How to Fix Them
+                        </h3>
+                        <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </div>
+                      <p className="text-[#94A3B8] text-sm mb-4">
+                        A quick, practical guide to the most common UX design pitfalls — from neglecting user research to overcomplicating interfaces. This post outlines real-world mistakes and how to fix them, helping designers build more intuitive, user-focused products.
+                      </p>
+                      <div className="flex items-center gap-4 text-xs text-[#94A3B8]">
+                        <span>August 25, 2024</span>
+                        <span>•</span>
+                        <span>4 min read</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              </div>
+            </div>
           </section>
 
           </div>
