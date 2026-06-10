@@ -605,7 +605,7 @@ export default function Home() {
               <a href="https://studiolux.substack.com/p/the-top-5-ux-books" target="_blank" rel="noopener noreferrer" className="block">
                 <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
                   <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
-                    <div className="w-full lg:w-48 flex-shrink-0">
+                    <div className="w-full lg:w-64 flex-shrink-0">
                       <WebsitePreview
                         imagePath="/blog1.png"
                         fallbackGradient="from-[#8B5CF6] to-[#EC4899]"
@@ -638,7 +638,7 @@ export default function Home() {
               <a href="https://studiolux.substack.com/p/top-5-common-ux-mistakes" target="_blank" rel="noopener noreferrer" className="block">
                 <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
                   <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
-                    <div className="w-full lg:w-48 flex-shrink-0">
+                    <div className="w-full lg:w-64 flex-shrink-0">
                       <WebsitePreview
                         imagePath="/top5blog.png"
                         fallbackGradient="from-[#10B981] to-[#3B82F6]"
