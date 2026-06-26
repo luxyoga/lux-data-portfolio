@@ -186,7 +186,7 @@ export default function Home() {
                     <div className="flex items-center gap-2 mb-3">
                       <a href="https://public.tableau.com/app/profile/lux.yogasegaran/viz/FootwearSalesDashboard_17628641426450/SalesDashboard" target="_blank" rel="noopener noreferrer" className="group-hover:text-[#5DE7D4] transition-colors duration-300">
                         <h3 className="text-l font-semibold">
-                          Footwear Sales Dashboard
+                          Retail Sales Analysis: 10-Year Trends Across EU, UK & NA
                         </h3>
                       </a>
                       <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -299,7 +299,7 @@ export default function Home() {
                     <div className="flex items-center gap-2 mb-3">
                       <a href="https://copenhagen-bike-pipeline.streamlit.app/" target="_blank" rel="noopener noreferrer" className="group-hover:text-[#5DE7D4] transition-colors duration-300">
                         <h3 className="text-l font-semibold">
-                          Copenhagen Biking Analysis
+                          Copenhagen Bike & Weather Pipeline
                         </h3>
                       </a>
                       <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
