@@ -456,7 +456,7 @@ export default function Home() {
           {/* Resume Link */}
           <section className="mb-16">
             <a 
-              href="/Lux_Yoga_Resume_2026.pdf"
+              href="/Lux_Yoga_Data_Analyst_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-m font-semibold text-[#94A3B8] hover:text-[#5DE7D4] transition-colors duration-300"
@@ -484,20 +484,20 @@ export default function Home() {
                     <div className="flex-1">
                       <div className="flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-2 mb-2">
                         <h3 className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 lg:whitespace-nowrap">
-                          Business Analyst (Contract)
+                          Data Analyst
                         </h3>
                         <span className="hidden lg:inline text-[#94A3B8]">·</span>
                         <span className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 flex items-center gap-1 lg:whitespace-nowrap">
-                          JD Sports
+                          JD Sports Fashion (Contract, Remote)
                           <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                           </svg>
                         </span>
                       </div>
                       <p className="text-[#94A3B8] text-sm mb-3">
-                      Queried SQL retail datasets and built Tableau dashboards analysing sell-through, margin, and store KPIs across 100+ EU and NA stores to support merchandising and pricing decisions.<br /><br />
+                      Queried SQL retail datasets and built Tableau dashboards analyzing sell-through, margin, and store KPIs across 100+ EU and NA stores to support merchandising and pricing decisions.<br /><br />
                       Designed and automated 10+ dashboards, improving reporting efficiency by 30%+ and enabling faster access to performance insights for distributed commercial teams.<br /><br />
-                      Delivered margin and profitability insights on product performance and regional demand, informing pricing and promotional strategies across 7-figure revenue lines.
+                      Delivered margin and profitability analysis across 7-figure revenue lines in 12 markets, informing pricing and promotional strategy.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Analysis</span>
@@ -518,13 +518,13 @@ export default function Home() {
                 <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
                   <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
                     <div className="w-full lg:w-28 flex-shrink-0">
-                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1 lg:text-right">11/2023 — 06/2025</p>
+                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1 lg:text-right">04/2023 — 06/2025</p>
                       <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:text-right">Toronto</p>
                     </div>
                     <div className="flex-1">
                       <div className="flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-2 mb-2">
                         <h3 className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 lg:whitespace-nowrap">
-                          Product Data Analyst
+                          Project Manager, Digital
                         </h3>
                         <span className="hidden lg:inline text-[#94A3B8]">·</span>
                         <span className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 flex items-center gap-1 lg:whitespace-nowrap">
@@ -535,9 +535,9 @@ export default function Home() {
                         </span>
                       </div>
                       <p className="text-[#94A3B8] text-sm mb-3">
-                      Queried and modelled 650K+ product interaction events in Snowflake to surface usage patterns and drive feature adoption decisions.<br /><br />
-                      Partnered with Product and Marketing to define and standardise KPIs for 10+ launches, including metric definitions and edge case handling, enabling data-driven roadmap prioritisation.<br /><br />
-                      Built Power BI dashboards tracking NPS, churn, and ARR per segment, reducing ad-hoc reporting by 25%+.
+                      Queried and modeled 650K+ product interaction events to surface usage patterns and drive feature adoption decisions.<br /><br />
+                      Partnered with Product and Marketing to define and standardize KPIs across 10+ launches, enabling data-driven roadmap prioritization.<br /><br />
+                      Built Power BI dashboards tracking NPS, churn, and ARR by segment, reducing ad-hoc reporting by 25%+.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Power BI</span>
@@ -557,13 +557,13 @@ export default function Home() {
                 <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
                   <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
                     <div className="w-full lg:w-28 flex-shrink-0">
-                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1 lg:text-right">11/2020 — 11/2023</p>
+                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1 lg:text-right">04/2019 — 11/2022</p>
                       <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:text-right">Toronto</p>
                     </div>
                     <div className="flex-1">
                       <div className="flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-2 mb-2">
                         <h3 className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 lg:whitespace-nowrap">
-                          Data Analyst
+                          Project Accountant
                         </h3>
                         <span className="hidden lg:inline text-[#94A3B8]">·</span>
                         <span className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 flex items-center gap-1 lg:whitespace-nowrap">
@@ -574,9 +574,9 @@ export default function Home() {
                         </span>
                       </div>
                       <p className="text-[#94A3B8] text-sm mb-3">
-                      Built ETL workflows across SAP and Deltek ERP systems, standardising project accounting and CRM data for financial reporting across 50+ architectural projects.<br /><br />
-                      Created interactive reports used by 20+ stakeholders to track revenue trends, project profitability, and campaign ROI.<br /><br />
-                      Unified billing and accounting data from multiple systems, cutting reporting turnaround by 30% and improving project profitability visibility.
+                      Built ETL workflows across SAP and Deltek ERP systems, standardizing project and CRM data for financial reporting across 50+ architectural projects.<br /><br />
+                      Created interactive reports used by 20+ stakeholders to track revenue trends, project profitability, and ROI.<br /><br />
+                      Unified billing and accounting data from multiple systems, cutting reporting turnaround by 30% and improving profitability visibility.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Power BI</span>
