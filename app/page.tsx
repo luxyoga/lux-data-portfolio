@@ -85,7 +85,7 @@ export default function Home() {
       <header className="lg:hidden block w-full bg-[#0F172A]">
         <div className="px-6 py-12">
           <h1 className="text-4xl font-bold text-white mb-2">Lux Yoga</h1>
-          <p className="text-lg sm:text-xl text-white mb-4 whitespace-nowrap">Data & Analytics Engineer</p>
+          <p className="text-lg sm:text-xl text-white mb-4 whitespace-nowrap">Data Analytics Engineer</p>
           <p className="text-m text-[#94A3B8] mb-6">Data and analytics professional with 5+ years across retail, SaaS, and architecture, working the full stack from SQL and ETL pipelines to Power BI and Tableau dashboards.</p>
           <div className="flex gap-4 text-2xl text-[#94A3B8]">
             <a href="https://www.linkedin.com/in/luxyoga/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
@@ -101,7 +101,7 @@ export default function Home() {
         <aside className="hidden lg:flex flex-col fixed left-0 top-0 h-full w-[40vw] max-w-[700px] px-32 z-10 backdrop-blur-md bg-transparent">
           <div className="flex flex-col h-full ml-4" style={{ paddingTop: '6rem' }}>
             <h1 className="text-5xl font-bold mb-2">Lux Yoga</h1>
-            <h2 className="text-xl font-medium text-white mb-8 whitespace-nowrap">Data & Analytics Engineer</h2>
+            <h2 className="text-xl font-medium text-white mb-8 whitespace-nowrap">Data Analytics Engineer</h2>
             <p className="mb-14 text-m text-[#94A3B8]">Data and analytics professional with 5+ years across retail, SaaS, and architecture, working the full stack from SQL and ETL pipelines to Power BI and Tableau dashboards.</p>
             <nav className="flex flex-col gap-8 mt-8">
               {menuItems.map((item) => (
