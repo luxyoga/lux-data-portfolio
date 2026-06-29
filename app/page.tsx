@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
-import { FaLinkedin, FaInstagram, FaGithub, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import WebsitePreview from './components/WebsitePreview';
 
 const menuItems = [
@@ -89,7 +89,6 @@ export default function Home() {
           <p className="text-m text-[#94A3B8] mb-6">Data and analytics professional with 5+ years across retail, SaaS, and architecture, working the full stack from SQL and ETL pipelines to Power BI and Tableau dashboards.</p>
           <div className="flex gap-4 text-2xl text-[#94A3B8]">
             <a href="https://www.linkedin.com/in/luxyoga/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
-            <a href="https://www.instagram.com/lux.dataflow/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
             <a href="https://github.com/luxyoga" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FaGithub /></a>
             <a href="mailto:luxman.yoga@gmail.com" aria-label="Email"><FaEnvelope /></a>
           </div>
@@ -134,7 +133,6 @@ export default function Home() {
             {/* Social Links */}
             <div className="flex gap-4 text-xl text-[#94A3B8] mt-12">
               <a href="https://www.linkedin.com/in/luxyoga/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="hover:text-[#5DE7D4] transition-colors duration-300"><FaLinkedin /></a>
-              <a href="https://www.instagram.com/lux.dataflow/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-[#5DE7D4] transition-colors duration-300"><FaInstagram /></a>
               <a href="https://github.com/luxyoga" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="hover:text-[#5DE7D4] transition-colors duration-300"><FaGithub /></a>
               <a href="mailto:luxman.yoga@gmail.com" aria-label="Email" className="hover:text-[#5DE7D4] transition-colors duration-300"><FaEnvelope /></a>
             </div>
