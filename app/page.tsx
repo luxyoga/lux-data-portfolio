@@ -623,7 +623,7 @@ export default function Home() {
                         A behind-the-scenes look at building Toronto Permit Pulse — an NL-to-SQL app powered by the Claude API that lets anyone query 228,000+ City of Toronto building permits in plain English. Covers the architecture, schema injection approach, and lessons learned.
                       </p>
                       <div className="flex items-center gap-4 text-xs text-[#94A3B8]">
-                        <span>June 29, 2025</span>
+                        <span>June 28, 2026</span>
                         <span>•</span>
                         <span>5 min read</span>
                       </div>
