@@ -467,7 +467,7 @@ export default function Home() {
           </section>
 
           <section id="experience" ref={experienceRef} className="mb-16">
-            <h2 className="lg:hidden sticky top-0 z-30 py-2 text-sm font-bold text-white mb-2 tracking-widest">EXPERIENCE</h2>
+            <h2 className="sticky top-0 z-30 py-2 text-sm font-bold text-white mb-2 tracking-widest">EXPERIENCE</h2>
             <div className="space-y-0">
               <div className="-mb-4">
 
@@ -595,7 +595,7 @@ export default function Home() {
 
           {/* Blog Section */}
           <section id="blog" ref={blogRef} className="mb-16">
-            <h2 className="lg:hidden sticky top-0 z-30 py-2 text-sm font-bold text-white mb-2 tracking-widest">BLOG</h2>
+            <h2 className="sticky top-0 z-30 py-2 text-sm font-bold text-white mb-2 tracking-widest">BLOG</h2>
             <div className="space-y-0">
               <div className="-mb-4">
 
