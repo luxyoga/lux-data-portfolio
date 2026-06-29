@@ -86,7 +86,7 @@ export default function Home() {
         <div className="px-6 py-12">
           <h1 className="text-4xl font-bold text-white mb-2">Lux Yoga</h1>
           <p className="text-lg sm:text-xl text-white mb-4 whitespace-nowrap">Data & Analytics Engineer</p>
-          <p className="text-m text-[#94A3B8] mb-6">End-to-end analytics, from pipeline to dashboard. I build the data infrastructure that turns raw numbers into decisions.</p>
+          <p className="text-m text-[#94A3B8] mb-6">Data and analytics professional with 5+ years across retail, SaaS, and architecture, working the full stack from SQL and ETL pipelines to Power BI and Tableau dashboards.</p>
           <div className="flex gap-4 text-2xl text-[#94A3B8]">
             <a href="https://www.linkedin.com/in/luxyoga/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
             <a href="https://www.instagram.com/lux.dataflow/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><FaInstagram /></a>
@@ -102,7 +102,7 @@ export default function Home() {
           <div className="flex flex-col h-full ml-4" style={{ paddingTop: '6rem' }}>
             <h1 className="text-5xl font-bold mb-2">Lux Yoga</h1>
             <h2 className="text-xl font-medium text-white mb-8 whitespace-nowrap">Data & Analytics Engineer</h2>
-            <p className="mb-14 text-m text-[#94A3B8]">End-to-end analytics, from pipeline to dashboard. I build the data infrastructure that turns raw numbers into decisions.</p>
+            <p className="mb-14 text-m text-[#94A3B8]">Data and analytics professional with 5+ years across retail, SaaS, and architecture, working the full stack from SQL and ETL pipelines to Power BI and Tableau dashboards.</p>
             <nav className="flex flex-col gap-8 mt-8">
               {menuItems.map((item) => (
                 <button
@@ -147,16 +147,16 @@ export default function Home() {
             <section id="about" ref={aboutRef} className="mb-16">
               <h2 className="lg:hidden sticky top-0 z-30 py-2 text-sm font-bold text-white mb-2 tracking-widest">ABOUT</h2>
               <p className="text-m text-[#94A3B8] mb-4">
-              Data professional with a background spanning analytics, BI, and data engineering across retail, SaaS, and architecture. I work across the full analytics stack, from ETL pipelines and data modelling to Power BI and Tableau dashboards that actually get used. Comfortable in SQL and Python, with hands-on experience in Airflow, PySpark, Docker, and DuckDB.
+              Data and analytics professional with 5+ years across retail, SaaS, and architecture, working the full stack from SQL and ETL pipelines to Power BI and Tableau dashboards.
               </p>
               <p className="text-m text-[#94A3B8] mb-4">
-              PMP certified.
+              Alongside analytics work, I build and deploy data tools. My recent project, Toronto Permit Pulse, is a natural language to SQL (NL-to-SQL) app that lets anyone query 228,000+ City of Toronto building permits in plain English, powered by the Claude API.
               </p>
               <p className="text-m text-[#94A3B8] mb-4">
-              Previously at JD Sports (Copenhagen) and Ascend Fundraising Solutions (Toronto). Open to data and analytics engineering roles in Copenhagen or remote opportunities.
+              PMP-certified and AWS Certified AI Practitioner. Comfortable in SQL and Python, with hands-on experience in Airflow, PySpark, Docker, and DuckDB.
               </p>
               <p className="text-m text-[#94A3B8] mb-4">
-              Fluent in English, actively learning Danish (A2).
+              Fluent in English, learning Danish (A2).
               </p>
             </section>
           
