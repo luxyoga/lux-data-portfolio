@@ -600,30 +600,30 @@ export default function Home() {
               <div className="-mb-4">
 
               {/* Blog Post 1 */}
-              <a href="https://studiolux.substack.com/p/the-top-5-ux-books" target="_blank" rel="noopener noreferrer" className="block">
+              <a href="https://studiolux.substack.com/p/building-toronto-permit-pulse-turning?r=1u45w1" target="_blank" rel="noopener noreferrer" className="block">
                 <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
                   <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
                     <div className="w-full lg:w-64 flex-shrink-0">
                       <WebsitePreview
-                        imagePath="/blog1.png"
-                        fallbackGradient="from-[#8B5CF6] to-[#EC4899]"
-                        alt="Top 5 Books Every UX Designer and Web Developer Should Read"
+                        imagePath="/permit-pulse-thumbnail.png"
+                        fallbackGradient="from-[#2563EB] to-[#5DE7D4]"
+                        alt="Building Toronto Permit Pulse: Turning 228,000+ Building Permits Into a Natural Language App"
                       />
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center gap-2 mb-3">
                         <h3 className="text-l font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300">
-                          Top 5 Books Every UX Designer and Web Developer Should Read
+                          Building Toronto Permit Pulse: Turning 228,000+ Building Permits Into a Natural Language App
                         </h3>
                         <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg>
                       </div>
                       <p className="text-[#94A3B8] text-sm mb-4">
-                        A curated list of must-read books that helped shape my journey as a UX designer and front-end developer. From design thinking to coding best practices, these picks offer practical insights, inspiration, and foundational knowledge for anyone building digital products.
+                        A behind-the-scenes look at building Toronto Permit Pulse — an NL-to-SQL app powered by the Claude API that lets anyone query 228,000+ City of Toronto building permits in plain English. Covers the architecture, schema injection approach, and lessons learned.
                       </p>
                       <div className="flex items-center gap-4 text-xs text-[#94A3B8]">
-                        <span>July 20, 2024</span>
+                        <span>June 29, 2025</span>
                         <span>•</span>
                         <span>5 min read</span>
                       </div>
