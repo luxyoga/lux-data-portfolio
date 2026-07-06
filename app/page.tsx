@@ -103,7 +103,7 @@ export default function Home() {
             <h2 className="text-xl font-medium text-white mb-8 whitespace-nowrap">Data Analytics Engineer</h2>
             <p className="mb-14 text-m text-[#94A3B8]">End-to-end analytics, from pipeline to dashboard. I build the data infrastructure that turns raw numbers into decisions.</p>
             <nav className="flex flex-col gap-8 mt-8">
-              {menuItems.map((item) => (
+              {menuItems.slice(0, 3).map((item) => (
                 <button
                   key={item.id}
                   onClick={() => handleMenuClick(item.id)}
@@ -139,6 +139,31 @@ export default function Home() {
                   Resume
                 </span>
               </a>
+              {menuItems.slice(3).map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => handleMenuClick(item.id)}
+                  className="flex items-center group focus:outline-none"
+                >
+                  <span
+                    className={
+                      active === item.id
+                        ? "h-0.5 w-12 mr-6 bg-white rounded transition-all duration-300"
+                        : "h-0.5 w-6 mr-6 bg-white/40 rounded transition-all duration-300"
+                    }
+                  ></span>
+                  <span
+                    className={
+                      `text-xs tracking-wide uppercase transition-all duration-300 ` +
+                      (active === item.id
+                        ? "font-bold text-white"
+                        : "font-medium text-white/60")
+                    }
+                  >
+                    {item.label}
+                  </span>
+                </button>
+              ))}
             </nav>
             
             {/* Social Links */}
