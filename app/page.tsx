@@ -192,7 +192,7 @@ export default function Home() {
                       </svg>
                     </div>
                     <p className="text-[#94A3B8] text-sm mb-4">
-                    End-to-end retail analytics project built on 100K+ records across 4 raw datasets — the kind of messy, multi-source data common in real retail environments. Ingested and joined product, sales, and regional data in MySQL, then cleaned and transformed it in Python (Pandas) to produce a unified, analysis-ready dataset. Modelled the data to support YoY comparisons across EU, UK, and NA markets before building the Tableau dashboard on top. Directly informed by work at JD Sports, where I built similar dashboards tracking sell-through, margin, and store KPIs across 100+ stores in 12 markets.
+                    End-to-end retail analytics built on 150K+ records. Ingested and joined product, sales, and regional data in MySQL, then cleaned and transformed in Python (Pandas) to produce a unified, analysis-ready dataset. Modelled the data to support YoY comparisons across EU, UK, and NA markets before building the Tableau dashboard on top. Directly informed by work at JD Sports, where I built similar dashboards tracking sell-through, margin, and store KPIs across 100+ stores in 12 markets to inform product and inventory decisions.
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">ETL Pipeline</span>
