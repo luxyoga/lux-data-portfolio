@@ -154,7 +154,10 @@ export default function Home() {
               PMP-certified and AWS Certified AI Practitioner. Comfortable in SQL and Python, with hands-on experience in Airflow, PySpark, Docker, and DuckDB.
               </p>
               <p className="text-m text-[#94A3B8] mb-4">
-              Fluent in English, learning Danish (A2).
+              Currently progressing AWS Solutions Architect Associate and Databricks Data Engineer Associate certifications.
+              </p>
+              <p className="text-m text-[#94A3B8] mb-4">
+              Native English speaker, learning Danish (A2).
               </p>
             </section>
           
