@@ -128,6 +128,17 @@ export default function Home() {
                   </span>
                 </button>
               ))}
+              <a
+                href="/Lux_Yoga_Data_Analyst_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center group focus:outline-none"
+              >
+                <span className="h-0.5 w-6 mr-6 bg-white/40 rounded transition-all duration-300 group-hover:w-12 group-hover:bg-white"></span>
+                <span className="text-xs tracking-wide uppercase font-medium text-white/60 transition-all duration-300 group-hover:text-white">
+                  Resume
+                </span>
+              </a>
             </nav>
             
             {/* Social Links */}
