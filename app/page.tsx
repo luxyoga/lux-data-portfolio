@@ -203,27 +203,27 @@ export default function Home() {
             <div className="space-y-0">
               <div className="-mb-4">
               
-              {/* Project Entry 1 - Footwear Sales Dashboard */}
+              {/* Copenhagen Biking Analysis */}
               <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
                 <div className="flex flex-col lg:flex-row gap-4 lg:gap-8">
                   {/* Preview Window */}
                   <div className="w-full lg:w-64 flex-shrink-0 lg:-ml-6">
-                    <a href="https://public.tableau.com/app/profile/lux.yogasegaran/viz/FootwearSalesDashboard_17628641426450/SalesDashboard" target="_blank" rel="noopener noreferrer">
-                      <WebsitePreview 
-                        imagePath="/dashboard_preview.png" 
-                        fallbackGradient="from-[#3B82F6] to-[#8B5CF6]"
-                        alt="Footwear Sales Dashboard preview"
+                    <a href="https://copenhagen-bike-pipeline.streamlit.app/" target="_blank" rel="noopener noreferrer">
+                      <WebsitePreview
+                        imagePath="/cphscreenshot3.jpg"
+                        fallbackGradient="from-[#10B981] to-[#3B82F6]"
+                        alt="Copenhagen Biking Analysis Dashboard preview"
                         objectFit="cover"
                       />
                     </a>
                   </div>
-                  
+
                   {/* Project Details */}
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-3">
-                      <a href="https://public.tableau.com/app/profile/lux.yogasegaran/viz/FootwearSalesDashboard_17628641426450/SalesDashboard" target="_blank" rel="noopener noreferrer" className="group-hover:text-[#5DE7D4] transition-colors duration-300">
+                      <a href="https://copenhagen-bike-pipeline.streamlit.app/" target="_blank" rel="noopener noreferrer" className="group-hover:text-[#5DE7D4] transition-colors duration-300">
                         <h3 className="text-l font-semibold">
-                          Retail Sales Analysis: 10-Year Trends Across EU, UK & NA
+                          Copenhagen Bike & Weather Pipeline
                         </h3>
                       </a>
                       <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -231,22 +231,22 @@ export default function Home() {
                       </svg>
                     </div>
                     <p className="text-[#94A3B8] text-sm mb-4">
-                    End-to-end retail analytics built on 150K+ records. Ingested and joined product, sales, and regional data in MySQL, then cleaned and transformed in Python (Pandas) to produce a unified, analysis-ready dataset. Modelled the data to support YoY comparisons across EU, UK, and NA markets before building the Tableau dashboard on top. Directly informed by work at JD Sports, where I built similar dashboards tracking sell-through, margin, and store KPIs across 100+ stores in 12 markets to inform product and inventory decisions.
+                    An end-to-end data engineering pipeline analysing cycling traffic across Copenhagen and its relationship with weather conditions. Built with Apache Airflow for orchestration, PySpark for distributed ETL, PostgreSQL for storage, and Streamlit for an interactive dashboard. Surfaces ten years of real cycling data to reveal seasonal patterns and weather correlations — the kind of operational insight relevant to urban planning and transport analytics.
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
-                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">ETL Pipeline</span>
-                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">MySQL</span>
-                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Python</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Apache Airflow</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">PySpark</span>
                       <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Pandas</span>
-                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Modeling</span>
-                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Cleaning</span>
-                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Tableau</span>
-                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Retail Analytics</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">PostgreSQL</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Streamlit</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Docker</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">ETL Pipelines</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Visualization</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <a 
-                        href="https://github.com/luxyoga/footwear-sales-dashboard" 
-                        target="_blank" 
+                      <a
+                        href="https://github.com/luxyoga/copenhagen-bike-pipeline"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-sm text-[#94A3B8] hover:text-[#5DE7D4] transition-colors duration-300 flex items-center gap-2 font-medium"
                       >
@@ -316,16 +316,16 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Copenhagen Biking Analysis */}
+              {/* Retail Sales Dashboard */}
               <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
                 <div className="flex flex-col lg:flex-row gap-4 lg:gap-8">
                   {/* Preview Window */}
                   <div className="w-full lg:w-64 flex-shrink-0 lg:-ml-6">
-                    <a href="https://copenhagen-bike-pipeline.streamlit.app/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://public.tableau.com/app/profile/lux.yogasegaran/viz/FootwearSalesDashboard_17628641426450/SalesDashboard" target="_blank" rel="noopener noreferrer">
                       <WebsitePreview
-                        imagePath="/cphscreenshot3.jpg"
-                        fallbackGradient="from-[#10B981] to-[#3B82F6]"
-                        alt="Copenhagen Biking Analysis Dashboard preview"
+                        imagePath="/dashboard_preview.png"
+                        fallbackGradient="from-[#3B82F6] to-[#8B5CF6]"
+                        alt="Footwear Sales Dashboard preview"
                         objectFit="cover"
                       />
                     </a>
@@ -334,9 +334,9 @@ export default function Home() {
                   {/* Project Details */}
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-3">
-                      <a href="https://copenhagen-bike-pipeline.streamlit.app/" target="_blank" rel="noopener noreferrer" className="group-hover:text-[#5DE7D4] transition-colors duration-300">
+                      <a href="https://public.tableau.com/app/profile/lux.yogasegaran/viz/FootwearSalesDashboard_17628641426450/SalesDashboard" target="_blank" rel="noopener noreferrer" className="group-hover:text-[#5DE7D4] transition-colors duration-300">
                         <h3 className="text-l font-semibold">
-                          Copenhagen Bike & Weather Pipeline
+                          Retail Sales Analysis: 10-Year Trends Across EU, UK & NA
                         </h3>
                       </a>
                       <svg className="w-4 h-4 group-hover:text-[#5DE7D4] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -344,21 +344,21 @@ export default function Home() {
                       </svg>
                     </div>
                     <p className="text-[#94A3B8] text-sm mb-4">
-                    An end-to-end data engineering pipeline analysing cycling traffic across Copenhagen and its relationship with weather conditions. Built with Apache Airflow for orchestration, PySpark for distributed ETL, PostgreSQL for storage, and Streamlit for an interactive dashboard. Surfaces ten years of real cycling data to reveal seasonal patterns and weather correlations — the kind of operational insight relevant to urban planning and transport analytics.
+                    End-to-end retail analytics built on 150K+ records. Ingested and joined product, sales, and regional data in MySQL, then cleaned and transformed in Python (Pandas) to produce a unified, analysis-ready dataset. Modelled the data to support YoY comparisons across EU, UK, and NA markets before building the Tableau dashboard on top. Directly informed by work at JD Sports, where I built similar dashboards tracking sell-through, margin, and store KPIs across 100+ stores in 12 markets to inform product and inventory decisions.
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
-                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Apache Airflow</span>
-                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">PySpark</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">ETL Pipeline</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">MySQL</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Python</span>
                       <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Pandas</span>
-                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">PostgreSQL</span>
-                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Streamlit</span>
-                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Docker</span>
-                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">ETL Pipelines</span>
-                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Visualization</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Modeling</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Cleaning</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Tableau</span>
+                      <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Retail Analytics</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <a
-                        href="https://github.com/luxyoga/copenhagen-bike-pipeline"
+                        href="https://github.com/luxyoga/footwear-sales-dashboard"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-sm text-[#94A3B8] hover:text-[#5DE7D4] transition-colors duration-300 flex items-center gap-2 font-medium"
