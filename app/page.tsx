@@ -504,7 +504,7 @@ export default function Home() {
                     <div className="flex-1">
                       <div className="flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-2 mb-2">
                         <h3 className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 lg:whitespace-nowrap">
-                          Project Manager, Digital
+                          Product Data Analyst
                         </h3>
                         <span className="hidden lg:inline text-[#94A3B8]">·</span>
                         <span className="text-m font-semibold group-hover:text-[#5DE7D4] transition-colors duration-300 flex items-center gap-1 lg:whitespace-nowrap">
