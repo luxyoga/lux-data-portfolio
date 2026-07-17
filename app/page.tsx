@@ -129,7 +129,7 @@ export default function Home() {
                 </button>
               ))}
               <a
-                href="/Lux_Yoga_Data_Analyst_Resume.pdf"
+                href="/Lux_Yoga_Data_Analytics_Engineer_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center group focus:outline-none"
@@ -436,7 +436,7 @@ export default function Home() {
           {/* Resume Link */}
           <section className="mb-16">
             <a 
-              href="/Lux_Yoga_Data_Analyst_Resume.pdf"
+              href="/Lux_Yoga_Data_Analytics_Engineer_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-m font-semibold text-[#94A3B8] hover:text-[#5DE7D4] transition-colors duration-300"
@@ -453,7 +453,44 @@ export default function Home() {
             <div className="space-y-0">
               <div className="-mb-4">
 
-              {/* Experience Entry 1 - JD Sports */}
+              {/* Experience Entry 1 - Lux Data Systems */}
+              <div className="block">
+                <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
+                  <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
+                    <div className="w-full lg:w-28 flex-shrink-0">
+                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:pt-1 lg:text-right">01/2026 — Present</p>
+                      <p className="text-xs text-[#94A3B8] lg:whitespace-nowrap lg:text-right">Toronto</p>
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex flex-col lg:flex-row lg:items-center gap-1 lg:gap-2 mb-2">
+                        <h3 className="text-m font-semibold lg:whitespace-nowrap">
+                          Data Engineer / Data Systems Consultant
+                        </h3>
+                        <span className="hidden lg:inline text-[#94A3B8]">·</span>
+                        <span className="text-m font-semibold lg:whitespace-nowrap">
+                          Lux Data Systems
+                        </span>
+                      </div>
+                      <p className="text-[#94A3B8] text-sm mb-3">
+                      Building full-stack data products to solve business problems for small to medium sized businesses in Toronto.<br /><br />
+                      Design and build end-to-end data pipelines and systems, taking raw data through ingestion, transformation, modeling, and serving into production-ready data products.<br /><br />
+                      Work hands-on across the modern data stack, including orchestration, warehousing, dbt, and cloud, while pursuing the AWS Solutions Architect Associate and Databricks Data Engineering certifications.
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Engineering</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">ETL Pipelines</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">dbt</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">SQL</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Python</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Modeling</span>
+                        <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Cloud</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Experience Entry 2 - JD Sports */}
               <a href="https://www.jdsports.com" target="_blank" rel="noopener noreferrer" className="block">
                 <div className="group relative p-6 rounded-lg border border-transparent transition-all duration-300 hover:bg-white/[0.02] hover:backdrop-blur-sm hover:border-white/[0.08] hover:shadow-md hover:shadow-black/10">
                   <div className="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:items-start">
