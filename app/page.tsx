@@ -512,9 +512,9 @@ export default function Home() {
                         </span>
                       </div>
                       <p className="text-[#94A3B8] text-sm mb-3">
-                      Queried SQL retail datasets and built Tableau dashboards analyzing sell-through, margin, and store KPIs across 100+ EU and NA stores to support merchandising and pricing decisions.<br /><br />
-                      Designed and automated 10+ dashboards, improving reporting efficiency by 30%+ and enabling faster access to performance insights for distributed commercial teams.<br /><br />
-                      Delivered margin and profitability analysis across 7-figure revenue lines in 12 markets, informing pricing and promotional strategy.
+                      Modeled and queried retail datasets across 100+ EU and NA stores in SQL, building Tableau dashboards on sell-through, margin, and store KPIs that guided merchandising and pricing.<br /><br />
+                      Automated 10+ Tableau dashboards using SQL and scheduled refreshes, improving reporting efficiency 30%+ and giving distributed commercial teams faster access to performance data.<br /><br />
+                      Delivered margin and profitability analysis across 7-figure revenue lines in 12 markets using SQL and Excel, informing pricing and promotional strategy.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Data Analysis</span>
@@ -552,9 +552,9 @@ export default function Home() {
                         </span>
                       </div>
                       <p className="text-[#94A3B8] text-sm mb-3">
-                      Queried and modeled 650K+ product interaction events to surface usage patterns and drive feature adoption decisions.<br /><br />
-                      Partnered with Product and Marketing to define and standardize KPIs across 10+ launches, enabling data-driven roadmap prioritization.<br /><br />
-                      Built Power BI dashboards tracking NPS, churn, and ARR by segment, reducing ad-hoc reporting by 25%+.
+                      Ran sentiment analysis on 650K+ product-interaction events with AWS Comprehend and Python, surfacing customer feedback to drive feature-adoption and roadmap decisions.<br /><br />
+                      Defined and standardized KPIs across 10+ product launches with Product and Marketing, building the metric definitions the team prioritized against.<br /><br />
+                      Built Power BI dashboards tracking NPS, churn, and ARR by segment, cutting ad-hoc reporting 25%+.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Power BI</span>
@@ -591,9 +591,9 @@ export default function Home() {
                         </span>
                       </div>
                       <p className="text-[#94A3B8] text-sm mb-3">
-                      Built ETL workflows across SAP and Deltek ERP systems, standardizing project and CRM data for financial reporting across 50+ architectural projects.<br /><br />
-                      Created interactive reports used by 20+ stakeholders to track revenue trends, project profitability, and ROI.<br /><br />
-                      Unified billing and accounting data from multiple systems, cutting reporting turnaround by 30% and improving profitability visibility.
+                      Built ETL workflows integrating SAP and Deltek ERP systems, standardizing project and CRM data for financial reporting across 50+ architectural projects.<br /><br />
+                      Unified billing and accounting data from multiple source systems using SQL, cutting reporting turnaround 30% and improving profitability visibility.<br /><br />
+                      Created interactive reports used by 20+ stakeholders to track revenue trends, project profitability, and ROI.
                       </p>
                       <div className="flex flex-wrap gap-2">
                         <span className="px-3 py-1 text-xs bg-[#132D47]/60 text-[#59DDD5] rounded-full font-medium tracking-wide">Power BI</span>
